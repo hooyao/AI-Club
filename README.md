@@ -11,7 +11,8 @@
 1. 安装miniconda
 2.
 ```sh
-conda creaet -n aiclub python=3.6
+conda create -n aiclub python=3.6
+source activate aiclub
 conda install pandas scikit-learn scikit-image scipy matplotlib sympy jupyter nb_conda -y
 pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-1.3.0-py3-none-any.whl
 pip install tflearn
@@ -19,7 +20,7 @@ pip install tflearn
 或者
 ```sh
 conda env create -f aiclub_mac.yml
+source activate aiclub
 ```
-3. source activate aiclub
-4. jupyter notebook --ip='*' --NotebookApp.token= --port=8888
-5. OK
+3. jupyter notebook --ip='*' --NotebookApp.token= --port=8888
+4. OK
