@@ -5,3 +5,7 @@
 **.log
 **.zip
 **.rsc
+**/checkpoint
+**/.ipynb_checkpoints
+**/*.ckpt.*
+**/*.gz
