@@ -19,7 +19,7 @@ pip install tflearn
 ```
 或者
 ```sh
-conda env create -f aiclub_mac.yaml
+conda env create --file ./aiclub_mac.yaml
 source activate aiclub
 ```
 3.
