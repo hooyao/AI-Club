@@ -18,7 +18,7 @@ pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorfl
 pip install tflearn
 ```
 或者
-```sh
+```shs
 conda env create --file ./aiclub_mac.yaml
 source activate aiclub
 ```
