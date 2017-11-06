@@ -1,4 +1,4 @@
-name: aiclub_test
+name: aiclub
 channels:
 - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free
 - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
