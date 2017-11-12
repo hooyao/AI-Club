@@ -18,10 +18,12 @@
     ```
     * 或者
     ```sh
+    conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+    conda config --set show_channel_urls yes
     conda create -n aiclub python=3.6
     source activate aiclub
     conda install pandas scikit-learn scikit-image scipy matplotlib sympy jupyter nb_conda -y
-    pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-1.3.0-py3-none-any.whl
+    pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-1.4.0-py3-none-any.whl
     pip install tflearn
     ```
 3.
@@ -46,8 +48,10 @@ jupyter notebook --ip='*' --NotebookApp.token= --port=8888
     ```
     * 当然从头自己装也行
     ```sh
+    conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+    conda config --set show_channel_urls yes
     conda create -n aiclub python=3.6
-    source activate aiclub
+    activate aiclub
     conda install pandas scikit-learn scikit-image scipy matplotlib sympy jupyter nb_conda -y
     ```
     下边CPU版本或是GPU版本只需要安装一个，GPU需要Windows安装好CUDA Toolkits并且安装好CUDNN
