@@ -40,7 +40,7 @@ jupyter notebook --ip='*' --NotebookApp.token= --port=8888
     conda env create --file ./aiclub_win_gpu.yaml
     source activate aiclub
     ```
-    * 或者直接导入GPU版本
+    * 或者直接导入CPU版本
 
     ```sh
     conda env create --file ./aiclub_win_cpu.yaml
