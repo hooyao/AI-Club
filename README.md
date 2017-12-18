@@ -13,6 +13,8 @@
 
     * 最简单的
     ```sh
+    conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+    conda config --set show_channel_urls yes
     conda env create --file ./aiclub_mac.yaml
     source activate aiclub
     ```
@@ -37,12 +39,15 @@ jupyter notebook --ip='*' --NotebookApp.token= --port=8888
 2. Conda 环境
     * 直接导入GPU版本
     ```sh
+    conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+    conda config --set show_channel_urls yes
     conda env create --file ./aiclub_win_gpu.yaml
     source activate aiclub
     ```
     * 或者直接导入CPU版本
-
     ```sh
+    conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+    conda config --set show_channel_urls yes
     conda env create --file ./aiclub_win_cpu.yaml
     source activate aiclub
     ```
