@@ -1,0 +1,8 @@
+version: '2'
+services:
+  tf2_gpu:
+    container_name: tf2_${IMG_TAG}
+    image: hooyao/tensorflow-dev:${IMG_TAG}
+    ports:
+      - "8888:8888"
+      - "6006:6006"

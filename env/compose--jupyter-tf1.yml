@@ -1,0 +1,13 @@
+version: '3'
+services:
+  tf1_gpu:
+    container_name: tf1_course_${IMG_TAG}
+    image: hooyao/tensorflow-dev:${IMG_TAG}
+    ports:
+      - "8888:8888"
+      - "6006:6006"
+    working_dir: /root/pyprojects
+    entrypoint: ["/bin/bash", "-c", "jupyter notebook --ip='0.0.0.0' --NotebookApp.token= --port=8888 --no-browser --allow-root"]
+    volumes:
+      - $HOME/DockerData/tensorflow1/pyprojects:/root/pyprojects
+      - $HOME/DockerData/tensorflow1/.karas:/root/.keras
