@@ -1,0 +1,11 @@
+version: '3'
+services:
+  torch_gpu:
+    container_name: torch_12
+    image: hooyao/torch-docker:12_gpu
+    ports:
+      - "8888:8888"
+      - "6006:6006"
+    entrypoint: ["/bin/bash", "-c", "jupyter notebook --ip='0.0.0.0' --NotebookApp.token= --port=8888 --no-browser --allow-root"]
+    volumes:
+      - ../:/root/pyprojects
