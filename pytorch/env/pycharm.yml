@@ -1,0 +1,10 @@
+version: '3'
+services:
+  torch_gpu:
+    container_name: torch_12
+    image: hooyao/torch-docker:12_gpu
+    ports:
+      - "8888:8888"
+      - "6006:6006"
+    volumes:
+      - $CUR_DIR/../:/root/pyprojects
